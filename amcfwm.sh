@@ -1795,12 +1795,12 @@ case "$1" in
 		cd "$HOME" || exit 1
 		if [ ! -d "$HOME/am-toolchains" ]; then
 			echo "Preparing Toolchain Repo"
-			git clone --depth 1 https://github.com/RMerl/am-toolchains.git
+			git clone --depth 1 https://ghproxy.com/https://github.com/RMerl/am-toolchains.git
 			echo
 		fi
 		if [ ! -d "$HOME/amng" ]; then
 			echo "Preparing Firmware Repo"
-			git clone https://github.com/RMerl/asuswrt-merlin.ng amng
+			git clone https://ghproxy.com/https://github.com/RMerl/asuswrt-merlin.ng amng
 			echo
 		fi
 
